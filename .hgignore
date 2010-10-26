@@ -1,0 +1,6 @@
+syntax: glob
+
+*.orig
+*.pyc
+*_ui.py
+*~
