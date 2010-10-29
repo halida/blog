@@ -18,7 +18,6 @@ INDEX_HTML = HTML_HEADER % {'title': u"网络寻租", 'body': u'%s'}
 ARTICLE_HTML = HTML_HEADER % {'title': "%(title)s", 'body': ur'''
 <div id="title"><h1>%(title)s</h1></div>
 %(content)s
-<a href="index.html">回到目录</a>
 <div id="comments">%(disqus)s</div>
 '''}
 
