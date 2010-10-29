@@ -8,19 +8,59 @@
     <link rel="stylesheet" type="text/css" href="../blog-src/build-res/style.css" media="screen" />
   </head>
 
-  <body>
+  <body><div id="wrap">
 
-    <div id="header">
-      <a href="index.html">网络寻租</a>
-      <a href="机械唯物主义.html">关于</a>
-      <a href="rss">rss</a>
-    </div>
-    <hr/>
+      <div id="header">
+      </div>
+      <div id="nav"><ul>
+	  <li><a href="index.html">网络寻租</a></li>
+	  <li><a href="机械唯物主义.html">关于</a></li>
+	  <li><a href="rss">rss</a></li>
+      </ul></div>
+      <hr/>
 
-    %(body)s
+      <div id="main">
+	%(body)s
+      </div>
 
-    <hr/>
-    <div id="footer">
-      <address><a href="mailto:linjunhalida@gmail.com">linjunhalida</a></address>
-    </div>
-</body></html>
+      <div id="sidebar">
+	<!-- for twitter -->
+	<script src="http://widgets.twimg.com/j/2/widget.js"></script>
+	<script>
+	  new TWTR.Widget({
+	  version: 2,
+	  type: 'profile',
+	  rpp: 4,
+	  interval: 6000,
+	  width: 250,
+	  height: 300,
+	  theme: {
+	  shell: {
+	  background: '#333333',
+	  color: '#ffffff'
+	  },
+	  tweets: {
+	  background: '#000000',
+	  color: '#ffffff',
+	  links: '#4aed05'
+	  }
+	  },
+	  features: {
+	  scrollbar: false,
+	  loop: false,
+	  live: false,
+	  hashtags: true,
+	  timestamp: true,
+	  avatars: false,
+	  behavior: 'all'
+	  }
+	  }).render().setUser('linjunhalida').start();
+	</script>
+      </div>
+
+      <div id="footer">
+	<hr/>
+	<address><a href="mailto:linjunhalida@gmail.com">linjunhalida</a></address>
+      </div>
+
+</div></body></html>

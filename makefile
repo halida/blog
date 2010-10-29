@@ -6,5 +6,5 @@ sync:
 	hg up
 publish: sync build
 
-publish-to-vps: build
+vps: build
 	scp -r ../blog vps.linjunhalida.com:/var/www/

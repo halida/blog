@@ -1,27 +1,49 @@
 /* CSS Document */
-body {
-    margin-left:auto;
-    margin-right:auto;
+
+/* convas */
+body,html {
+    margin:0;
+    padding:0;
+    background: white;
+}
+#wrap {
     width: 1000px;
+    margin:0 auto;
     background-color: white;
 }
 
-#title, .document, #comments{
-    margin-right:auto;
-    width: 800px;
+/* float sidebar */
+#main {
+    float:left;
+    width:700px;
+}
+#sidebar {
+    float:right;
+    width:200px;
+}
+#footer {
+    clear:both;
 }
 
+/* color */
 .document {
     background-color: #f0f0f0;
 }
 #title {
     text-align:center;
 }
-
 hr {
     color: #303030;
 }
 
-#comments{
+/* navigation bar horizontal */
+#nav ul {
+    margin:0;
+    padding:0;
+    list-style:none;
 }
-
+#nav li {
+    display:inline;
+    margin:0;
+    padding:0;
+}
