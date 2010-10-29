@@ -42,18 +42,18 @@ def main():
         content = publish_parts(
             source=open(filename).read(),
             writer_name='html')['html_body']
-        content = (ARTICLE_HTML % {
+        content_html = (ARTICLE_HTML % {
                 'title': title,
                 'content': unicode(content),
                 'disqus': DISQUS_INFO,
                 }).encode('utf-8')
         open(os.path.join(
                 target_path, title).encode('utf-8'),
-             'w+').write(content)
+             'w+').write(content_html)
         indexs.append(u'%s <a href="%s#disqus_thread">%s</a>' % (updated, title, title))
         items.append(RSS_ITEM % {'title': title,
                                  'updated': updated,
-                                 'content': escape(content).decode('utf-8')})
+                                 'content': escape(content.encode('utf-8')).decode('utf-8')})
 
     #生成index
     open(os.path.join(target_path, 'index.html'),'w+').write(

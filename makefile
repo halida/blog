@@ -1,5 +1,5 @@
 build:
-	rm ../blog/*
+	rm ../blog/* -f
 	python build.py
 sync:
 	hg pull
