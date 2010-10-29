@@ -14,12 +14,12 @@ DISQUS_INFO = open(os.path.join(res_path, 'disqus.html')).read().encode('utf-8')
 HTML_HEADER = open(os.path.join(res_path, 'base.html')).read().decode('utf-8')
 RSS_ITEM = open(os.path.join(res_path, 'rss_item.html')).read().decode('utf-8')
 RSS_HTML = open(os.path.join(res_path, 'rss.html')).read().decode('utf-8')
-INDEX_HTML = HTML_HEADER % {'title': u"网络寻租", 'body': u'%s'}
-ARTICLE_HTML = HTML_HEADER % {'title': "%(title)s", 'body': ur'''
-<div id="title"><h1>%(title)s</h1></div>
-%(content)s
-<div id="comments">%(disqus)s</div>
-'''}
+INDEX_HTML = HTML_HEADER % {'title': u"网络寻租",
+                            'header': '',
+                            'body': u'%s'}
+ARTICLE_HTML = HTML_HEADER % {'title': "%(title)s",
+                              'header': '<h1>%(title)s</h1>',
+                              'body': ur'''%(content)s <br/> <div id="comments">%(disqus)s</div>'''}
 
 def main():
     #获取文件列表

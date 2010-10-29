@@ -26,11 +26,14 @@ body,html {
 }
 
 /* color */
-.document {
+#main {
     background-color: #f0f0f0;
 }
 #title {
     text-align:center;
+}
+#comments {
+    background-color: white;
 }
 hr {
     color: #303030;
