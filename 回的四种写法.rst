@@ -1,4 +1,4 @@
-昨天聚会，沈大侠分享了一下python dict get的四种方法::
+2010/5/30聚会，沈大侠分享了一下python dict get的四种方法::
 
     # method 1
     # 采用异常捕捉来处理KeyError
