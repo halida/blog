@@ -9,7 +9,10 @@ from docutils.core import publish_parts
 target_path = u"../blog/"
 res_path = u"build-res/"
 
+DISQUS_INFO = open(os.path.join(res_path, 'disqus.html')).read().encode('utf-8')
 HTML_HEADER = open(os.path.join(res_path, 'base.html')).read().decode('utf-8')
+RSS_ITEM = open(os.path.join(res_path, 'rss_item.html')).read().decode('utf-8')
+RSS_HTML = open(os.path.join(res_path, 'rss.html')).read().decode('utf-8')
 INDEX_HTML = HTML_HEADER % {'title': u"网络寻租", 'body': u'%s'}
 ARTICLE_HTML = HTML_HEADER % {'title': "%(title)s", 'body': ur'''
 <div id="title"><h1>%(title)s</h1></div>
@@ -17,7 +20,6 @@ ARTICLE_HTML = HTML_HEADER % {'title': "%(title)s", 'body': ur'''
 <a href="index.html">回到目录</a>
 <div id="comments">%(disqus)s</div>
 '''}
-DISQUS_INFO = open(os.path.join(res_path, 'disqus.html')).read().encode('utf-8')
 
 def main():
     #获取文件列表
@@ -31,7 +33,7 @@ def main():
                for i in content]
     content.sort(reverse=True)
     #对于每个文件
-    indexs = []
+    indexs, items = [], []
     for updated, filename in content:
         title = filename.split('.')[0]
         htmlname = title + u'.html'
@@ -48,9 +50,14 @@ def main():
                 target_path, htmlname).encode('utf-8'),
              'w+').write(content)
         indexs.append(u'%s <a href="%s#disqus_thread">%s</a>' % (updated, htmlname, title))
+        items.append(RSS_ITEM % {'title': title, 'updated': updated})
+
     #生成index
     open(os.path.join(target_path, 'index.html'),'w+').write(
         (INDEX_HTML % u"\n<br/><br/>".join(indexs)).encode('utf-8'))
-
+    #生成rss
+    open(os.path.join(target_path, 'rss.html'),'w+').write(
+        (RSS_HTML % u"\n\n".join(items)).encode('utf-8'))
+    
 if __name__=="__main__":
     main()
