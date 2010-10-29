@@ -3,14 +3,14 @@
 """
 module: build
 """
-import os, os.path, glob
+import os, os.path, glob, commands
 from docutils.core import publish_parts
 
 target_path = u"../blog/"
 res_path = u"build-res/"
 
-HTML_HEADER = open(os.path.join(res_path, 'base.html')).read().encode('utf-8')
-INDEX_HTML = HTML_HEADER % {'title': u"网络寻租", 'body': u'<h1 id="title">网络寻租</h1>\n%s'}
+HTML_HEADER = open(os.path.join(res_path, 'base.html')).read().decode('utf-8')
+INDEX_HTML = HTML_HEADER % {'title': u"网络寻租", 'body': u'%s'}
 ARTICLE_HTML = HTML_HEADER % {'title': "%(title)s", 'body': ur'''
 <div id="title"><h1>%(title)s</h1></div>
 %(content)s
@@ -25,10 +25,14 @@ def main():
     content = [i.decode('utf-8')
                for i in content 
                if os.path.basename(i)[0] != '_']
-    content.sort()
+    content = [(commands.getoutput((
+                    u"hg log -l1 --template '{date|shortdate}' " + i
+                    ).encode('utf-8')), i)
+               for i in content]
+    content.sort(reverse=True)
     #对于每个文件
     indexs = []
-    for filename in content:
+    for updated, filename in content:
         title = filename.split('.')[0]
         htmlname = title + u'.html'
         #生成html
@@ -43,7 +47,7 @@ def main():
         open(os.path.join(
                 target_path, htmlname).encode('utf-8'),
              'w+').write(content)
-        indexs.append(u'<a href="%s#disqus_thread">%s</a>' % (htmlname, title))
+        indexs.append(u'%s <a href="%s#disqus_thread">%s</a>' % (updated, htmlname, title))
     #生成index
     open(os.path.join(target_path, 'index.html'),'w+').write(
         (INDEX_HTML % u"\n<br/><br/>".join(indexs)).encode('utf-8'))
