@@ -28,6 +28,6 @@ HTML = """\
 """
 open('../blog/index.html','w+').write(
     HTML % "<br/><br/>".join(
-        ['<a href="/blog/%(1)s">%(1)s</a>' % {'1': n}
+        ['<a href="/blog/%(1)s">%(1)s</a>' % {'1': os.path.basename(n)+'.html'}
          for n in content]
         ))
