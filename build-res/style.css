@@ -1,0 +1,27 @@
+/* CSS Document */
+body {
+    margin-left:auto;
+    margin-right:auto;
+    width: 1000px;
+    background-color:
+}
+
+#title, .document, #comments{
+    margin-right:auto;
+    width: 800px;
+}
+
+.document {
+    background-color: #f0f0f0;
+}
+#title {
+    text-align:center;
+}
+
+hr {
+    color: #303030;
+}
+
+#comments{
+}
+

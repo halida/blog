@@ -10,13 +10,13 @@ target_path = u"../blog/"
 res_path = u"build-res/"
 
 HTML_HEADER = open(os.path.join(res_path, 'base.html')).read().encode('utf-8')
-INDEX_HTML = HTML_HEADER % u"<h1>网络寻租</h1>\n%s"
-ARTICLE_HTML = HTML_HEADER % u"""\
-<h1>%(title)s</h1>
+INDEX_HTML = HTML_HEADER % {'title': u"网络寻租", 'body': u'<h1 id="title">网络寻租</h1>\n%s'}
+ARTICLE_HTML = HTML_HEADER % {'title': "%(title)s", 'body': ur'''
+<div id="title"><h1>%(title)s</h1></div>
 %(content)s
-<hr/>%(disqus)s
-<hr/><a href="index.html">回到目录</a>
-"""
+<a href="index.html">回到目录</a>
+<div id="comments">%(disqus)s</div>
+'''}
 DISQUS_INFO = open(os.path.join(res_path, 'disqus.html')).read().encode('utf-8')
 
 def main():
