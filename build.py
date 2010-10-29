@@ -17,7 +17,8 @@ HTML_HEADER = u"""\
 """
 INDEX_HTML = HTML_HEADER % u"<h1>网络寻租</h1>\n%s"
 ARTICLE_HTML = HTML_HEADER % u"""\
-%s
+<h1>%(title)s</h1>
+%(content)s
 <hr/>
 <div id="disqus_thread"></div>
 <script type="text/javascript">
@@ -52,6 +53,7 @@ def main():
     content = [i.decode('utf-8')
                for i in content 
                if os.path.basename(i)[0] != '_']
+    content.sort()
     #对于每个文件
     indexs = []
     for filename in content:
@@ -61,7 +63,10 @@ def main():
         content = publish_parts(
             source=open(filename).read(),
             writer_name='html')['html_body']
-        content = (ARTICLE_HTML % unicode(content)).encode('utf-8')
+        content = (ARTICLE_HTML % {
+                'title': title,
+                'content': unicode(content),
+                }).encode('utf-8')
         open(os.path.join(
                 target_path, htmlname).encode('utf-8'),
              'w+').write(content)
