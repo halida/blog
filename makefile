@@ -11,7 +11,7 @@ down:
 vps-publish: down build
 
 publish: up
-	ssh vps.linjunhalida.com "cd /var/www/blog-src/;make publish"
+	ssh vps.linjunhalida.com "cd /var/www/blog-src/;make vps-publish"
 
 show: build
 	chromium-browser ../blog/index.html
