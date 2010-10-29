@@ -1,10 +1,17 @@
 build:
 	rm ../blog/* -f
 	python build.py
-sync:
+up:
+	hg push
+
+down:
 	hg pull
 	hg up
-publish: sync build
 
-vps: build
-	scp -r ../blog vps.linjunhalida.com:/var/www/
+vps-publish: down build
+
+publish: up
+	ssh vps.linjunhalida.com "cd /var/www/blog-src/;make publish"
+
+show: build
+	chromium-browser ../blog/index.html
