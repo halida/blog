@@ -7,45 +7,17 @@ import os, os.path, glob
 from docutils.core import publish_parts
 
 target_path = u"../blog/"
+res_path = u"build-res/"
 
-HTML_HEADER = u"""\
-<html>
-<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
-<body>
-%s
-</body></html>
-"""
+HTML_HEADER = open(os.path.join(res_path, 'base.html')).read().encode('utf-8')
 INDEX_HTML = HTML_HEADER % u"<h1>网络寻租</h1>\n%s"
 ARTICLE_HTML = HTML_HEADER % u"""\
 <h1>%(title)s</h1>
 %(content)s
-<hr/>
-<div id="disqus_thread"></div>
-<script type="text/javascript">
-  /**
-    * var disqus_identifier; [Optional but recommended: Define a unique identifier (e.g. post id or slug) for this thread] 
-    */
-  (function() {
-   var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-   dsq.src = 'http://halidasvps.disqus.com/embed.js';
-   (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-  })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=halidasvps">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
-
-<script type="text/javascript">
-var disqus_shortname = 'halidasvps';
-(function () {
-  var s = document.createElement('script'); s.async = true;
-  s.src = 'http://disqus.com/forums/halidasvps/count.js';
-  (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-}());
-</script>
-
-<hr/>
-<a href="index.html">回到目录</a>
+<hr/>%(disqus)s
+<hr/><a href="index.html">回到目录</a>
 """
+DISQUS_INFO = open(os.path.join(res_path, 'disqus.html')).read().encode('utf-8')
 
 def main():
     #获取文件列表
@@ -66,6 +38,7 @@ def main():
         content = (ARTICLE_HTML % {
                 'title': title,
                 'content': unicode(content),
+                'disqus': DISQUS_INFO,
                 }).encode('utf-8')
         open(os.path.join(
                 target_path, htmlname).encode('utf-8'),

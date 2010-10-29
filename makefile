@@ -1,0 +1,2 @@
+build:
+	python build.py
