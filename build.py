@@ -37,7 +37,7 @@ def main():
     indexs, items = [], []
     for updated, filename in content:
         title = filename.split('.')[0]
-        # htmlname = title + u'.html'
+        htmlname = title + u'.html'
         #生成html
         content = publish_parts(
             source=open(filename).read(),
@@ -48,9 +48,9 @@ def main():
                 'disqus': DISQUS_INFO,
                 }).encode('utf-8')
         open(os.path.join(
-                target_path, title).encode('utf-8'),
+                target_path, htmlname).encode('utf-8'),
              'w+').write(content_html)
-        indexs.append(u'%s <a href="%s#disqus_thread">%s</a>' % (updated, title, title))
+        indexs.append(u'%s <a href="%s#disqus_thread">%s</a>' % (updated, htmlname, title))
         items.append(RSS_ITEM % {'title': title,
                                  'updated': updated,
                                  'content': escape(content.encode('utf-8')).decode('utf-8')})
@@ -59,7 +59,7 @@ def main():
     open(os.path.join(target_path, 'index.html'),'w+').write(
         (INDEX_HTML % u"\n<br/><br/>".join(indexs)).encode('utf-8'))
     #生成rss
-    open(os.path.join(target_path, 'rss'),'w+').write(
+    open(os.path.join(target_path, 'rss.html'),'w+').write(
         (RSS_HTML % u"\n\n".join(items)).encode('utf-8'))
     
 if __name__=="__main__":
