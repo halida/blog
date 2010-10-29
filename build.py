@@ -29,7 +29,7 @@ def main():
                for i in content 
                if os.path.basename(i)[0] != '_']
     content = [(commands.getoutput((
-                    u"hg log -l1 --template '{date|shortdate}' " + i
+                    u"hg log -l1 --template '{date|isodate}' " + i
                     ).encode('utf-8')), i)
                for i in content]
     content.sort(reverse=True)
