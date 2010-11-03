@@ -2,6 +2,8 @@ build:
 	rm ../blog/* -f
 	python build.py
 up:
+	hg add 
+	hg ci -m "update"
 	hg push
 
 down:
