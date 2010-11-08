@@ -17,5 +17,6 @@ show: build
 	chromium-browser ../blog/index.html
 
 done:
+	hg add 
 	hg ci -m "edit"
 	hg push
