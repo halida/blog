@@ -15,3 +15,7 @@ publish: up
 
 show: build
 	chromium-browser ../blog/index.html
+
+done:
+	hg ci -m "edit"
+	hg push
