@@ -35,10 +35,12 @@ rst2s5是属于 docutils_ 的, 需要下载 docutils_ , 然后可以在命令行
 如何写rst
 --------------------
 
-网上有 `教程 <http://docutils.sourceforge.net/docs/user/slide-shows.html>`_ , 但是没有示例, 我找了半天, 发现这个教程其实也是用rst写出来的, 源文件是 `这个 <http://docutils.sourceforge.net/docs/user/slide-shows.txt>`_, 只要仿照这个文件去写就可以了. 或者你可以看我写的 `文档 <http://dl.dropbox.com/u/1167873/PyQt%E4%BB%8B%E7%BB%8D/pyqt_intro/pyqt_intro.rst>`_. 不需要去学, 直接抄就好了.
+网上有 `rst2s5教程`_ , 但是没有示例, 我找了半天, 发现这个教程其实也是用rst写出来的, 源文件是 `这个 <http://docutils.sourceforge.net/docs/user/slide-shows.txt>`_, 只要仿照这个文件去写就可以了. 或者你可以看我写的 `文档 <http://dl.dropbox.com/u/1167873/PyQt%E4%BB%8B%E7%BB%8D/pyqt_intro/pyqt_intro.rst>`_. 不需要去学, 直接抄就好了.
 
-至于rst格式, 你可以看 `这篇文档 <http://docutils.sourceforge.net/docs/user/rst/quickref.html#hyperlink-targets>`_ 来学习如何写.
+至于rst格式, 你可以看: `ReST快速入门`_, 来学习如何写.
 
 .. [1] 麻瓜们
+.. _`rst2s5教程`: http://docutils.sourceforge.net/docs/user/slide-shows.html
+.. _`ReST快速入门`: http://docutils.sourceforge.net/docs/user/rst/quickref.html
 .. _S5: http://meyerweb.com/eric/tools/s5/
 .. _docutils: http://docutils.sourceforge.net/
