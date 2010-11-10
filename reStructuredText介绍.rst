@@ -60,17 +60,20 @@ http://docutils.sourceforge.net/docs/user/rst/quickref.html
 
     rst2latex --input-encoding=utf-8 --output-encoding=utf-8 xxx.rst >> s.tex
 
-* python code: 有个东西叫docutils::
+.. class:: handout
+
+   没有弄明白rst2pdf如何弄中文.. 发了 `issue <http://code.google.com/p/rst2pdf/issues/detail?id=377>`_
+
+python code
+================================
+
+有个东西叫docutils::
 
     from docutils.core import publish_string
     content = publish_string(
         source="doc here"
         writer_name='html'
         )
-
-.. class:: handout
-
-   没有弄明白rst2pdf如何弄中文.. 发了 `issue <http://code.google.com/p/rst2pdf/issues/detail?id=377>`_
 
 我用它来干什么?
 ================================
