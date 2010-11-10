@@ -5,7 +5,7 @@
 ================================
 
 :Authors: 机械唯物主义 <linjunhalida@gmai.com>
-:Date:    2010-11-09
+:Date:    2010-11-10
 
 .. container:: handout
 
@@ -20,8 +20,8 @@
 .. class:: handout
 
    作为乐于分享的开发人员, 总是免不了想向其他人介绍一些好玩的东西. 这个时候, 我们需要写幻灯片, 用展示自己要讲的东西. 
-   `其他人`_ 往往使用PPT, PPT是很好, 但是作为纯文本文件爱好者, 无法以文本方式编辑, 也无法进行版本管控的PPT文件,
-   无法满足 `我们`_ 的需求. 那么我们应该用什么工具来做幻灯片呢?
+   其他人往往使用PPT, PPT是很好, 但是作为纯文本文件爱好者, 无法以文本方式编辑, 也无法进行版本管控的PPT文件,
+   无法满足我们的需求. 那么我们应该用什么工具来做幻灯片呢?
    在wikipedia上面有 `slide工具列表`_ 来介绍现有的幻灯片工具, 我选择的是 S5_ .
 
    那么S5有什么好处呢?
@@ -145,8 +145,6 @@ need docutils::
 * S5_: http://meyerweb.com/eric/tools/s5/
 * docutils_: http://docutils.sourceforge.net/
 
-.. _`其他人`: 麻瓜们
-.. _`我们`: 纯文本控
 .. _`在线rst2s5`: http://vps.linjunhalida.com/tools/rst2s5/
 .. _`slide工具列表`: http://en.wikipedia.org/wiki/Category:Presentation_software/
 .. _`rst2s5教程`: http://docutils.sourceforge.net/docs/user/slide-shows.html
