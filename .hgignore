@@ -4,3 +4,6 @@ syntax: glob
 *.pyc
 *_ui.py
 *~
+
+syntax: regexp
+^temp/
