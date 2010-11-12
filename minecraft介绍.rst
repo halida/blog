@@ -24,6 +24,7 @@
 图片
   - `专门的图片站 <http://minecraftgallery.com/>`_
   - `多人模式图片 <http://www.minecraftforum.net/viewtopic.php?f=1012&t=22626>`_
+  - `很多用户在发自己造的房子 <http://www.minecraftforum.net/viewtopic.php?f=35&t=26376>`_
 
 多说无益, 直接点开来玩吧
 ----------------------------
