@@ -13,7 +13,7 @@ down:
 vps-publish: down build
 
 publish: up
-	ssh vps.linjunhalida.com "cd /var/www/django/mysite/;make blog_update"
+	ssh server.linjunhalida.com "cd /var/www/django/mysite/;make blog_update"
 
 show: build
 	chromium-browser ../blog/index.html
