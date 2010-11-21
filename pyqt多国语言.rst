@@ -64,6 +64,15 @@ qt翻译是根据类的名称来走的, 调用了什么类的tr, 就取这个类
 qt里面是可以利用QObject::tr来翻译, 但是pyqt里面不能, 
 pylupdate4只是做字符串查找, 看有什么字符串是在tr后面的, 然后根据tr调用者来把这个词语归类, 如果没有调用者, 就把它归类到 "@default" 里面. 于是我就只好利用上面的方法来做一个规避..有点恶心, 看看以后是否会有更好的方法来处理.
 
+对于类里面的翻译, 不需要那么麻烦::
+
+    class Input(QWidget):
+        def __init__(self):
+            super(Input, self).__init__()
+            label = QLabel(self.tr("input:"))
+
+这里面的tr, 就可以被正确翻译出来.
+
 然后运行pylupdate, 因为我们是python程序, 没有pro, 就只能手动指定文件了 ::
 
     pylupdate4 main.py -ts plabel_zh_CN.ts
