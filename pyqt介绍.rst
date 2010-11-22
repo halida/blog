@@ -196,12 +196,20 @@ Event
 其他强大特性
 ============================
 
+.. class:: handout
+
+   作为一款现代的工业级别的图形库, 是还有其他非常多的特性的, 这里给出一个大致的列表:
+
 * 足够多和好用的控件/自定控件/整合到designer中
 * webkit/script支持
 * 强大/方便/快速的绘图控件
 * 富文本/文本解析
 * 多国语言支持
 * 其他第三方控件支持: pyqwt
+
+.. class:: handout
+
+   具体有个展示的工具, 如果你安装了qt的话, 可以执行qtdemo, 看看就知道qt能干什么事情了, 并且可以从里面挖出代码来作为参考.
 
 发布
 ============================
@@ -217,7 +225,7 @@ pyinstaller_!
 * PyQt安装
     * ubuntu::
 
-          sudo apt-get install python-qt4 python-qt4-doc 
+          sudo apt-get install pyqt4-dev-tools
 
     * windows可以下载一个python包: pythonxy_
 
