@@ -37,7 +37,9 @@
 
 .. class:: handout
 
-   这个是计算器的代码::
+   这个是计算器的代码:
+
+.. code-block:: python
 
     #!/usr/bin/env python
     #-*- coding:utf-8 -*-
@@ -110,7 +112,9 @@ layout
        |----- QLineEdit
        |----- QListWidget
 
-* 代码::
+* 代码:
+
+.. code-block:: python
 
     l = QVBoxLayout(self)
     for w in self.leInput, self.lwResult:
@@ -127,11 +131,15 @@ Signal and Slot in Qt
 
 Qt和PyQt 事件机制区别
 ============================
-* Qt::
+* Qt:
+
+.. code-block:: c++
 
     this->connect(leInput, SINGAL(returnPressed()), this, caculate))
 
-* PyQt::
+* PyQt:
+
+.. code-block:: python
 
     self.leInput.returnPressed.connect(self.caculate)
 
@@ -163,7 +171,8 @@ UI designer
 
 UI with Code
 ============================
-::
+
+.. code-block:: python
 
     form, base = uic.loadUiType("score.ui")
     class ScoreDlg(QDialog, form):
@@ -177,7 +186,8 @@ UI with Code
 
 Event
 ============================
-::
+
+.. code-block:: python
 
     def mouseReleaseEvent(self, event):
         if event.button() == Qt.LeftButton:
