@@ -1,6 +1,8 @@
 因为工作需要，要在GUI的后台维护一个监控线程，该线程需要和主线程做通讯。为了完成这个需求，需要采用一种线程安全的消息机制。因为我采用PyQt4作为GUI的库，因此，直接使用PyQt4的消息机制成为我考虑的首选。
 
-在PyQt4里面，发出消息采用emit的方式。比如::
+在PyQt4里面，发出消息采用emit的方式。比如:
+
+.. code-block:: python
 
     # 新的pythonic的方式
     self.sbValue.setValue[int].emit(12)
@@ -29,7 +31,9 @@ Qt supports three types of signal-slot connections:
 * 队列方式。调用者线程把消息丢给消息队列，然后就不管它了。被调用者的线程在处理消息队列的时候，就会处理它。
 * 自动方式（默认）。如果调用者和被调用者是属于一个线程的，系统选择直接调用，不然就采用队列的方式。
 
-而机制的选择，可以在connect方法里面设置type::
+而机制的选择，可以在connect方法里面设置type:
+
+.. code-block:: c++
 
     bool QObject::connect (const QObject * sender,
                            const char * signal,
@@ -39,7 +43,9 @@ Qt supports three types of signal-slot connections:
 
 那麽，我们可以开始做实验验证这样是否在PyQt4里面行得通了。
 
-测试代码1：测试在单线程下，修改type之后，emit消息是否会立刻执行下一行代码::
+测试代码1：测试在单线程下，修改type之后，emit消息是否会立刻执行下一行代码:
+
+.. code-block:: python
 
     #!/usr/bin/env python
     #-*- coding:utf-8 -*-
@@ -87,14 +93,18 @@ Qt supports three types of signal-slot connections:
         main()
 
 点击按钮，"sended!"要过一段时间才出现在命令行。
-把上面的注释部分改为::
+把上面的注释部分改为:
+
+.. code-block:: c++
 
     self.connect(self, SIGNAL("waitProcess()"),
                  self.waitProcess, Qt.QueuedConnection)
 
 再执行一次，点击按钮，"sended!"立刻就出现了。
 
-测试代码2：现在转到线程里面::
+测试代码2：现在转到线程里面:
+
+.. code-block:: python
 
     #!/usr/bin/env python
     #-*- coding:utf-8 -*-

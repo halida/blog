@@ -12,7 +12,7 @@ QML
 
 简单点说, QML就是以定义的方式来写界面, 格式很像CSS. 一个简单的示例代码:
 
-::
+.. code-block:: javascript
 
     //首先引入相关的模块
     import QtQuick 1.0
@@ -43,7 +43,7 @@ QML
 
 QML能够自己定义对象类型, 比如,新建一个文件Cell.qml:
 
-::
+.. code-block:: javascript
 
     import QtQuick 1.0
    
@@ -70,7 +70,7 @@ QML能够自己定义对象类型, 比如,新建一个文件Cell.qml:
 
 我们可以定义新的属性:
 
-::
+.. code-block:: javascript
 
     property alias cellColor: rectangle.color
 
@@ -80,13 +80,13 @@ QML能够自己定义对象类型, 比如,新建一个文件Cell.qml:
 
 也可以定义新的事件:
 
-::
+.. code-block:: javascript
 
     signal clicked(color cellColor)
 
 MouseArea是用来做用户交互的, 我们把它的onClicked事件和我们定义的clicked事件绑定起来:
 
-::
+.. code-block:: javascript
 
     MouseArea {
         ...
@@ -95,7 +95,9 @@ MouseArea是用来做用户交互的, 我们把它的onClicked事件和我们定
 
 这样, 当用户点击Cell之后, 就会触发clicked事件, 这个事件附带Cell方块的颜色作为参数.
 
-我们定义了一个Cell之后, 如何使用呢? 这里是使用Cell的代码 ::
+我们定义了一个Cell之后, 如何使用呢? 这里是使用Cell的代码:
+
+.. code-block:: javascript
 
     import QtQuick 1.0
    
@@ -132,7 +134,7 @@ MouseArea是用来做用户交互的, 我们把它的onClicked事件和我们定
 
 别看上面那些代码那么多, 其实都是些图块的定义. 功能就是, 点击上面一堆Cell其中的一个, 就会改变Hello world的颜色. 如何做到的呢? 只要定义Cell的onClicked事件引发后, 对应执行的代码就好了:
 
-::
+.. code-block:: javascript
 
     Cell { cellColor: "blue"; onClicked: helloText.color = cellColor }
 
@@ -145,7 +147,9 @@ QML最神奇的地方是, 能够定义效果, 比如实现这个:
 
 当鼠标点击hello world的时候, 就会出现上面的动画.
 
-核心代码是这个 ::
+核心代码是这个:
+
+.. code-block:: javascript
 
     Text {
         text: "Hello world!"
@@ -168,13 +172,14 @@ QML最神奇的地方是, 能够定义效果, 比如实现这个:
     }
 
 先定义一个MouseArea, 捕捉用户点击的事件 
-::
+
+.. code-block:: javascript
 
     MouseArea { id: mouseArea; anchors.fill: parent }
 
 然后定义一个Hello world翻转的状态, 当mouseArea被点击的时候, 就会把自己变成翻转的状态.
 
-::
+.. code-block:: javascript
 
         states: State {
             name: "down"; when: mouseArea.pressed == true
@@ -183,7 +188,7 @@ QML最神奇的地方是, 能够定义效果, 比如实现这个:
 
 当然, 现在的话点击之后, 就会立刻把hello world翻转过来, 我们要定义一个效果 
 
-::
+.. code-block:: javascript
 
         transitions: Transition {
             // 这个效果是为从初始状态变为down状态而设定的

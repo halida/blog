@@ -45,7 +45,9 @@ pyqt下面如何实现多国语言
 
 pyqt里面实现的过程和qt里面的类似, 只是因为第一步需要扫描的不是c++代码, 所以需要利用一个pyqt的工具: pylupdate4, 用法和lupdate一样.
 
-首先写程序 ::
+首先写程序 
+
+.. code-block:: python
 
     trans = QTranslator()
     trans.load('plabel_zh_CN')

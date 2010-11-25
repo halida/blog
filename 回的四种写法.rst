@@ -1,4 +1,6 @@
-2010/5/30聚会，沈大侠分享了一下python dict get的四种方法::
+2010/5/30聚会，沈大侠分享了一下python dict get的四种方法:
+
+.. code-block:: python
 
     # method 1
     # 采用异常捕捉来处理KeyError
@@ -43,7 +45,9 @@ method1和method4都只查询一次，
 method2和method3都要查询两次，
 在某些查询是性能瓶颈的时候，不如method1和2快。
 
-为了对上面的估计作实际验证，我写了测试程序，如下::
+为了对上面的估计作实际验证，我写了测试程序，如下:
+
+.. code-block:: python
 
     #!/usr/bin/env python
     #-*- coding:utf-8 -*-

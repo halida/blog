@@ -1,13 +1,12 @@
 PyQt4提供了非常好的皮肤机制，可以作出非常炫的效果。其中一个功能就是qss，利用类似css的方式来配置界面。
 文档在这里。
-使用方法(顺便分享一下我的qss配置) ::
+使用方法(顺便分享一下我的qss配置):
 
-    DEFAULT_STYLE = """
+.. code-block:: css
+
     /*背景贴图*/
-    /*
     QWidget{ background-image: url(res/tex.png) }
     QAbstractScrollArea,QPushButton { background-image: None}
-    */
 
     /*背景色*/
     QWidget{ background-color: bgdColor }
@@ -56,7 +55,10 @@ PyQt4提供了非常好的皮肤机制，可以作出非常炫的效果。其中
     alternate-background-color: darkContentColor;
     background-color: contentColor;
     }
-    """
+
+上面作为字符串放在DEFAULT_STYLE里面, 然后具体的颜色在下面的python代码中设置:
+
+.. code-block:: python
     
     #设置style里面的颜色
     COLOR_MAP = {
