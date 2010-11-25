@@ -209,4 +209,4 @@ QML最神奇的地方是, 能够定义效果, 比如实现这个:
 
 我原先接触过WPF, 也是定义的方式来做的, 现在看到Qt也支持了, 感到蛮欣慰的. 我现在使用pyqt, 听说pyside的snapshot里面已经支持qml了, 期待稳定版本的发布.
 
-对了, 还有一个 `深入教程 <http://doc.qt.nokia.com/4.7-snapshot/qml-advtutorial.html>`_, 可以看看.
+看到网站上面有对应的截图, 个人猜测他们会把QML的内容整合到web上面. QML是支持javascript的, 具体内容可在 `深入教程 <http://doc.qt.nokia.com/4.7-snapshot/qml-advtutorial.html>`_ 里面, 可以看看.
