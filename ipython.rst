@@ -1,6 +1,10 @@
 什么是ipython
 -----------------------
-python里面的一个杀手级应用就是它的解释器, 我们可以利用这个解释器来完成一些日常的工作, 比如计算器, 字符串处理, 其他计算显示什么的. 但是python本身自带的解释器功能不够强大, 所以有了 `ipython <http://ipython.scipy.org/moin/>`_ 这个大杀器.
+
+.. image :: http://ipython.scipy.org/screenshots/snapshot1.png
+   :width: 600
+
+python里面的一个杀手级应用就是它的解释器, 我们可以利用这个解释器来完成一些日常的工作, 比如计算器, 字符串处理, 其他计算显示什么的. 但是python本身自带的解释器功能不够强大, 所以有了 `ipython <http://ipython.scipy.org/moin/>`_ 这个大杀器. 上面的图片显示的就是ipython的具体效果.
 
 ipython的目标是成为一个全方位的交互性和探索计算的平台, 它好像是隶属于scipy下面的, 莫非有替代matlab的期望? 对于我们普通人来说, 它的特性已经足够好到替换掉python自带的那个解释器了. 下面为大家介绍.
 
