@@ -83,7 +83,7 @@ rst2s5实例
 试用一下
 ================================
 
-不多说, `在线rst2s5`_ : http://vps.linjunhalida.com/tools/rst2s5/
+不多说, `在线rst2s5`_ : http://server.linjunhalida.com/tools/rst2s5/
 
 本地生成
 ================================
