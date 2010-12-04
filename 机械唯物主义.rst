@@ -3,7 +3,7 @@
 
 兴趣点
 -------------------------
-* c/c++/lisp/lua/delphi/python, Qt/PyQt
+* c/c++/lisp/lua/delphi/python, Qt/PyQt4
 * ubuntu, emacs
 * 古典自由主义, 经济学
 * 死亡金属, 旋律, 暗潮, 兔子流,自我毁灭倾向
@@ -14,6 +14,10 @@
 * maillist: python-cn, shlug, toplanguage
 * twitter
 * douban
+
+现在在用的
+-------------------------
+emacs, gmail, douban, twitter, chrome, skype, restructuredtext, python, pyqt4, qwt, ubuntu10.10, eeepc, nginx, django
 
 联系方式
 -------------------------
