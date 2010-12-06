@@ -11,8 +11,10 @@ Command('publish', 'up',
         'ssh server.linjunhalida.com "cd /data/workspace/blog-src/;hg pull;hg up; cd /data/workspace/mysite/;make blog_update"')
 
 # for test
-file = ARGUMENTS.get('f', '')
-print file, type(file)
-Command('test', [],
-        ['rst2html %s > temp/s.html' % file,
-         'o temp/s.html'])
+if 'test' in COMMAND_LINE_TARGETS:
+    import os, webbrowser
+    file = ARGUMENTS.get('f', '')
+    os.system('rst2html %s > temp/s.html' % file)
+    webbrowser.open('temp/s.html')
+
+Command('test', [],'echo "ok"')
