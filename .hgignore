@@ -4,6 +4,7 @@ syntax: glob
 *.pyc
 *_ui.py
 *~
+.sconsign.dblite
 
 syntax: regexp
 ^temp/
