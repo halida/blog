@@ -1,10 +1,18 @@
-Command('up', [], ['hg add',
-                   'hg ci -m "update"',
-                   'hg push'])
-Command('down', [], 'hg pull; hg up')
-Command('publish', 'up', 'ssh server.linjunhalida.com "cd /data/workspace/blog-src/;hg pull;hg up; cd /data/workspace/mysite/;make blog_update"')
+Command('up', [],
+        ['hg add',
+         'hg ci -m "update"',
+         'hg push'])
+
+Command('down', [],
+        ['hg pull',
+         'hg up'])
+
+Command('publish', 'up',
+        'ssh server.linjunhalida.com "cd /data/workspace/blog-src/;hg pull;hg up; cd /data/workspace/mysite/;make blog_update"')
 
 # for test
-file = ARGUMENTS.get('f', '').decode('utf-8')
+file = ARGUMENTS.get('f', '')
 print file, type(file)
-Command('test', [], 'rst2html %s > temp/s.html; o temp/s.html' % file)
+Command('test', [],
+        ['rst2html %s > temp/s.html' % file,
+         'o temp/s.html'])
