@@ -59,7 +59,7 @@ pyqt有几种方式:
             super(ScoreDlg, self).__init__()
             self.setupUi(self)
 
-  在pyside里面, 直接生成一个对象的方法:
+在pyside里面, 直接生成一个对象的方法:
 
 .. code-block:: python
 
@@ -68,7 +68,7 @@ pyqt有几种方式:
     widget = loader.load('mywidget.ui')
     widget.show()
 
-  我上pyside的maillist, 找到了动态生成的方式, 把代码放在这里吧:
+我上pyside的maillist, 找到了动态生成的方式, 把代码放在这里吧:
 
 .. code-block:: python
 
@@ -91,7 +91,7 @@ pyqt有几种方式:
        QMetaObject.connectSlotsByName(ui)
        return ui
 
-  然后, 我们就可以用loadUi来扩展一个类了:
+然后, 我们就可以用loadUi来扩展一个类了:
 
 .. code-block:: python
 
@@ -115,5 +115,5 @@ pyside可以和qml一起使用, 不过我对qml不熟悉, 等以后熟悉了再�
 
 - `pyside <http://www.pyside.org/>`_ 官方网站
 - `pyside文档 <http://developer.qt.nokia.com/wiki/PySideDocumentation/>`_
-- `pyside示例代码 http://qt.gitorious.org/pyside/pyside-examples`_
+- `pyside示例代码 <http://qt.gitorious.org/pyside/pyside-examples>`_
 - `pyside源码库 <http://qt.gitorious.org/pyside>`_
