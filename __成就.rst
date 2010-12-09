@@ -11,6 +11,9 @@
 
 100      coding till forget eating
 
+100      写程序写得忘记吃饭?
+0        写程序写得忘记睡觉?
+
 ?        蹦级
 ?        intercourse
 ?        intercourse with a male?
