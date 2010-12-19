@@ -9,7 +9,7 @@ reStructuredText介绍
 
 什么是reStructuredText?
 ================================
-一种写文档的格式. 简称: ReST_
+一种写文档的方式. 简称: ReST_
 
 .. class:: handout
 
@@ -17,10 +17,15 @@ reStructuredText介绍
 
 .. class:: incremental
 
-* 简单, 易学易用
-* 源文件易读
+* 简单, 现场学,现场会
+* 易读
 * 方便生成html/pdf等其他格式
-* 以及: python文档是用它的格式
+
+.. class:: handout
+
+    Q: 有wiki了, 为什么还用它?
+
+    A: 恩恩, 目标不一样, rest是用来嵌入到代码注释中的..
 
 怎么玩?
 ================================
@@ -42,11 +47,15 @@ reStructuredText介绍
 
 There should be one-- and preferably only one --obvious way to do it.
 
+google: rest
+
 http://docutils.sourceforge.net/docs/user/rst/quickstart.html
 http://docutils.sourceforge.net/docs/user/rst/quickref.html
 
 如何生成其他格式
 ================================
+
+需要安装docutils
 
 * html: 有个东西叫rst2html::
 
@@ -67,7 +76,7 @@ http://docutils.sourceforge.net/docs/user/rst/quickref.html
 python code
 ================================
 
-有个东西叫docutils::
+.. code-block:: python
 
     from docutils.core import publish_string
     content = publish_string(
@@ -80,7 +89,7 @@ python code
 
 * 写博客
 * 写文档
-* 问题: 支持ReST的网站不多..
+* 问题: 好像没有支持ReST的网站..
 
 连接
 ================================
