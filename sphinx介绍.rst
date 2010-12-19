@@ -58,8 +58,8 @@ reStructuredText介绍
 ================================
 
 ::
-    $ find
 
+    $ find
     .
     ./Makefile               # 工具帮我们生成的makefile
     ./build                  # 生成文档后放置的目录
@@ -110,6 +110,10 @@ make
 
 资源
 ================================
+
+官方文档
+
+    http://sphinx.pocoo.org/
 
 .. _sphinx: http://sphinx.pocoo.org/
 
