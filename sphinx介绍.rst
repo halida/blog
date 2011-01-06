@@ -21,12 +21,11 @@ reStructuredText介绍
 .. class:: incremental
 
 * python文档所使用的系统
+* 输出HTML, LaTeX, manual pages, 纯文本..
+* 层级结构, 内链
+* 自动索引
 * 语法高亮
 * 扩展: graphivz, docstrings, 等等..
-* 索引
-* 内链
-* 层级结构
-* 输出HTML, LaTeX, manual pages, 纯文本..
 
 让我们开始尝试一下
 ================================
@@ -91,7 +90,46 @@ reStructuredText介绍
 
     然后我们就可以继续写intro.rst, tutorial.rst等文档了.
     这些文档的格式都采用restructuredtext方式.
-    sphinx做了一些扩展, 不过我不是很熟悉, 具体可以见官方文档.
+
+文档对象
+================================
+
+.. class:: handout
+
+    如果你要写一个python函数的定义, 这样写:
+
+::
+
+    .. py:function:: enumerate(sequence[, start=0])
+
+    Return an iterator that yields tuples of an index and an item of the
+    *sequence*. (And so on.)
+
+    这里是连接 :py:func:`enumerate`
+
+.. class:: handout
+
+    对应的文档介绍在这里: http://sphinx.pocoo.org/tutorial.html#documenting-objects
+
+自动导入代码中的文档
+================================
+
+.. class:: handout
+
+    sphinx一个非常好的功能, 就是可以自动嵌入代码中的文档, 如果你有一个模块io.open
+
+::
+
+    .. autofunction:: io.open
+
+    .. automodule:: io
+       :members:
+
+.. class:: handout
+
+    sphinx必须先知道你的模块位置, 要在 conf.py 里面把目录加到 sys.path 里面去.
+
+    conf.py里面必须加sphinx.ext.autodoc的模块.
 
 生成我们需要的格式
 ================================
