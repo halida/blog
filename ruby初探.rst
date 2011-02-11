@@ -1,3 +1,6 @@
+.. image:: http://www.ruby-lang.org/images/logo.gif
+   :align: center
+
 python和ruby的区别
 -------------------------
 
@@ -150,6 +153,6 @@ ruby里面, 只有false和nil是假, 0和""都是为真, 需要注意.
 ------------------------------
 花了一下午的时间熟悉ruby, 学习前, 感觉ruby会很繁杂, 以及会有"有了python干嘛学习ruby"的想法.
 真正开始学了之后, 还是体会到一点ruby的精妙之处的. 个人感觉ruby离lisp比较近(当然, 只有lisp才有那么强大的宏).
-等我再深入一点ruby, 再看看有什么意思吧. 恩, 还有ruby的神器: ruby on rails.
+等我再深入一点ruby, 再看看有什么意思吧. 恩, 还有ruby的神器: `ruby on rails <http://server.linjunhalida.com/blog/article/ruby_on_rails%E5%88%9D%E6%8E%A2/>`_.
 
 .. _`the ruby programming language`: http://www.amazon.com/Ruby-Programming-Language-David-Flanagan/dp/0596516177

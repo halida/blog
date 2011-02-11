@@ -1,4 +1,5 @@
 .. image:: http://perl.apache.org/docs/2.0/user/handlers/http_cycle.gif
+   :align: center
 
 HTTP是什么就不说了, 大家都知道. 这篇文章对HTTP实现方式的相关内容做一个整理, 满足大家的窥私欲望.
 
