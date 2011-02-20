@@ -84,40 +84,38 @@
 
 recurse 最后会进入到2个函数里面去, 一个是leaft_method, 它处理单行的一些语法, 比如: tag > tag2 > tag3 | text, 也是采用上面那种循环消耗字符串的方法. 这里略过不表. 
 
-另一个就是branch_method, 这里面的值是函数html_block_tag. 它里面是处理缩进后的一些语法. 处理完头部之后, 会把缩进里面的内容传给recurse函数, 就这样一步步解析玩子树.
-里面的append函数就把解析玩的内容传给output, 最后打印成html代码.
+另一个就是branch_method, 这里面的值是函数html_block_tag. 它里面是处理缩进后的一些语法. 处理完头部之后, 会把缩进里面的内容传给recurse函数, 就这样一步步解析玩子树. 里面的append函数就把解析玩的内容传给output, 最后打印成html代码.
 
 .. code-block:: python
 
-def html_block_tag(output, block, recurse):
-    append = output.append
-    prefix, tag = block[0]
-    if RAW_HTML.regex.match(tag):
-        # 如果是html代码(<开头)就不解析头部
-        append(prefix + tag)
-        # 解析子树
-        recurse(block[1:])
-    elif COMMENT_SYNTAX.match(tag):
-        # 注释..
-        pass
-    elif VERBATIM_SYNTAX.match(tag):
-        # 子树不解析, 直接打印出来
-        m = VERBATIM_SYNTAX.match(tag)
-        tag = m.group(1).rstrip()
-        start_tag, end_tag = apply_jquery_sugar(tag)
-        append(prefix + start_tag)
-        stream(append, block[1:])
-        append(prefix + end_tag)
-    else:
-        # 普通的状况, 解析出tag
-        start_tag, end_tag = apply_jquery_sugar(tag)
-        # 输出tag头
-        append(prefix + start_tag)
-        # 解析子树
-        recurse(block[1:])
-        # 输出tag尾
-        append(prefix + end_tag)
-
+    def html_block_tag(output, block, recurse):
+        append = output.append
+        prefix, tag = block[0]
+        if RAW_HTML.regex.match(tag):
+            # 如果是html代码(<开头)就不解析头部
+            append(prefix + tag)
+            # 解析子树
+            recurse(block[1:])
+        elif COMMENT_SYNTAX.match(tag):
+            # 注释..
+            pass
+        elif VERBATIM_SYNTAX.match(tag):
+            # 子树不解析, 直接打印出来
+            m = VERBATIM_SYNTAX.match(tag)
+            tag = m.group(1).rstrip()
+            start_tag, end_tag = apply_jquery_sugar(tag)
+            append(prefix + start_tag)
+            stream(append, block[1:])
+            append(prefix + end_tag)
+        else:
+            # 普通的状况, 解析出tag
+            start_tag, end_tag = apply_jquery_sugar(tag)
+            # 输出tag头
+            append(prefix + start_tag)
+            # 解析子树
+            recurse(block[1:])
+            # 输出tag尾
+            append(prefix + end_tag)
 
 结论
 ---------------------
