@@ -8,7 +8,8 @@ Command('down', [],
          'hg up'])
 
 Command('publish', 'up',
-        'ssh server.linjunhalida.com "cd /data/workspace/blog-src/;hg pull;hg up; cd /data/workspace/mysite/;make blog_update"')
+        ['ssh server.linjunhalida.com "cd /data/workspace/blog-src/;hg pull;hg up; cd /data/workspace/mysite/;make blog_update"',
+         'o http://blog.linjunhalida.com'])
 
 # for test
 if 'test' in COMMAND_LINE_TARGETS:
