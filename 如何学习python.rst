@@ -1,5 +1,5 @@
-如何学习python
-===========================
+.. image:: http://images.amazon.com/images/P/0596002815.01.LZZZZZZZ.jpg
+   :align: center
 
 我们假设你是一个初级程序员, 只懂得一点点的基础知识, 希望能够用python来做开发.
 这篇文档就是为了满足以上目标而写的.
