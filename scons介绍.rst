@@ -34,7 +34,8 @@ scons不是上面的小甜饼, 而是一个基于python的自动化构建工具.
 
     eays_install scons
 
-  对了, 如果在windows下面, easy_install安装后有可能出现: import error: 找不到Scons.Script, 我研究了一下, 发现在scons放的位置不对, 只要搜索下把scons的目录放到dist-packages文件夹里面就好了.
+  对了, 如果在windows下面, easy_install安装后有可能出现: import error: 找不到Scons.Script.
+  我研究了一下, 发现在scons放的位置不对, 只要搜索下把scons的目录放到dist-packages文件夹里面就好了.
 
 一个简单的示例
 --------------------------
