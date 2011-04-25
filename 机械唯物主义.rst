@@ -20,9 +20,9 @@
 * twitter
 * douban
 
-现在在用的
+现在在玩的以及玩过的
 -------------------------
-emacs, gmail, douban, twitter, chrome, skype, restructuredtext, python, pyqt4, qwt, ubuntu10.10, eeepc, nginx, django
+emacs, gmail, douban, twitter, chrome, skype, restructuredtext, sphinx, c, c++, python, ruby, lua, lisp, scheme, pyqt4, qwt, ubuntu10.10, eeepc, nginx, django, ror
 
 联系方式
 -------------------------
