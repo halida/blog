@@ -18,16 +18,16 @@ Qwt的架构很简单, 官方文档上面虽然没有说, 但是我整理了一�
 
     QwtPlot
        |
-       |------- QwtCurve
+       |------- QwtPlotCurve
        |
-       |------- QwtCurve
+       |------- QwtPlotCurve
 
-QwtPlot就是谱图显示的控件, 任何需要显示的曲线(包括网格什么的), 都是QwtCurve, 一个QwtPlot上面可以放很多的QwtCurve.
+QwtPlot就是谱图显示的控件, 任何需要显示的曲线(包括网格什么的), 都是QwtPlotCurve, 一个QwtPlot上面可以放很多的QwtPlotCurve.
 
 具体职责:
 
 - `QwtPlot <http://qwt.sourceforge.net/class_qwt_plot.html>`_ 负责坐标的部分, 比如显示的范围, X轴Y轴什么的. 要注意的是, 它可以有多个X和多个Y, 方便不同Y值的谱图叠在一起.
-- QwtCurve负责如何去绘制谱图, 比如画直方图, 网格什么的. 它还有一个子类: `QwtPlotMarker <http://qwt.sourceforge.net/class_qwt_plot_marker.html>`_, 可以对谱图的特定位置做标记.
+- QwtPlotCurve负责如何去绘制谱图, 比如画直方图, 网格什么的. 它还有一个子类: `QwtPlotMarker <http://qwt.sourceforge.net/class_qwt_plot_marker.html>`_, 可以对谱图的特定位置做标记.
 
 上代码
 --------------------
