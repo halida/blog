@@ -16,6 +16,11 @@
 
     echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function' >> ~/.bash_profile
 
+不过我发现bash好像不调用.bash_profile, 所以还是用.bashrc吧 ::
+
+    echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function' >> ~/.bashrc
+
+
 重新加载 ::
 
     source .bash_profile
