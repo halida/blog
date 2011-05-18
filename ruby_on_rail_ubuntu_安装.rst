@@ -33,7 +33,7 @@
 
     rvm install 1.9.2
 
-设置默认环境:
+设置默认环境 ::
 
     rvm use 1.9.2 --default
 
