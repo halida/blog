@@ -101,3 +101,13 @@ mysql默认编码是latin, 我们要改成utf8, 修改/etc/mysql/my.cnf,
     grant all privileges on test.* to tester;
 
 好了, 现在东西都已经可以用了, 开始干活吧.
+
+
+issues
+---------------------------------------------
+如果sqlite安装出现问题, 需要
+
+.. code-block:: bash
+
+    sudo apt-get install libsqlite3-dev
+    gem install sqlite3-ruby
