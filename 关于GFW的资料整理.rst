@@ -42,6 +42,9 @@ http://www.slideshare.net/LinjunHalida/tell-you-what-is-gfw
 
 http://www.cfresh.net/pc-tech/662
 
+好像也被墙了, 如果上面那个不能访问, 进: 
+https://www.evernote.com/shard/s7/sh/1464eee6-78d0-44de-aa3d-45039228c1d1/cdf44af4963de551d116655fca675268
+
 翻墙后能做什么?
 -----------------------
 好了, 你现在翻过来了, 应该做什么呢?
