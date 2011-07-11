@@ -22,6 +22,7 @@
 * `6.001 <http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-001-structure-and-interpretation-of-computer-programs-spring-2005>`_ 老牌入门课.
 
 基础课程.
+
 * `6.042J <http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-spring-2010/>`_ 恩, 一些计算机领域必须的数学基础.
 * `6.002 <http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-004-computation-structures-spring-2009/>`_ 可以说是计算机组成原理. 
 * `6.046J <http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-046j-introduction-to-algorithms-sma-5503-fall-2005/>`_ 算法基础. 
