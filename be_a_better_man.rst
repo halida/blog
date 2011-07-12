@@ -1,5 +1,6 @@
 .. image:: http://www.jggz.net/teacher/tiyu/22.jpg
    :align: center
+   :width: 600
 
 If one person knows how he spend his life, he will be in shock:
 
