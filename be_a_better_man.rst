@@ -20,7 +20,7 @@ we always eager to start doing things right away, it is human nature, our brain 
 and planning is hard, make ourselves feel bad. but the issue is: plannig is hard because you don't really know what you starts! 
 and without knowing the full picture may lead to failure. so make a plan, it is your road map. without it, you will easily get lost.
 
-** rule 2: start and finish what you plans.**
+**rule 2: start and finish what you plans.**
 
 people controlled by their feelings. things have good part and bad part. we always lost the battle. we always retreat, if we don't have faith.
 if planning is like a general, analysis, judges, and make decisions, doing things is like a soldier. not care about how target is hard to accomplish,
