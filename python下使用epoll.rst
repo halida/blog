@@ -284,13 +284,12 @@ Listen Backlog Queue Size
 
   在1-4的例子中, 12行显示了调用serversocket.listen()方法. 参数是监听等待队列的大小. 它告诉了操作系统, 在python代码accept前, 缓存多少TCP/IP连接在队列中.
   每次python代码调用accept()的时候, 一个连接从队列中移除, 为新的连接进来空出一个位置. 如果队列满了, 新的连接自动放弃, 给客户端带来不必要的网络延迟.
-  一个生产环境下的服务器经常处理几十或者几百的同时连接数, 所以参数为1是不适合的. 比如, 当采用 `ab <http://httpd.apache.org/docs/2.0/programs/ab.html>`_ 来对这些测试程序进行并行100个http1.0客户端的性能测试时,
-  少于50的参数经常造成性能下降.
+  一个生产环境下的服务器经常处理几十或者几百的同时连接数, 所以参数不应该设置为1. 比如, 当采用 `ab <http://httpd.apache.org/docs/2.0/programs/ab.html>`_ 来对这些测试程序进行并发100个http1.0客户端请求时, 少于50的参数容易造成性能下降.
 
 TCP Options
 
-  `TCP_CORK <http://www.baus.net/on-tcp_cork>`_ 参数可以被用来缓存消息知道它们准备发送,
-  这个选项, 在例子5的24和40行, 可以是一个好的参数, 如果是给一个实现了http/1.1 pipelining的服务器来使用.
+  `TCP_CORK <http://www.baus.net/on-tcp_cork>`_ 参数可以设置缓存消息直到一起被发送,
+  这个选项, 在例子5的34和40行, 适合给一个实现 `http/1.1 pipelining <http://en.wikipedia.org/wiki/HTTP_pipelining>`_ 的服务器来使用.
 
 例子5:
 
