@@ -38,9 +38,11 @@
 
 http://docs.python.org/tutorial/index.html
 
-然后做 http://www.pythonchallenge.com/ 这个网站上面的题目.
+如果你觉得英文太有难度的话, 去看 `python简明教程 <http://sebug.net/paper/python/>`_
 
-如果卡在某一关太久, 可以看答案(google python challenge answer), 做完后看看别人的编码方式和自己有什么区别.
+或者这里有一个google的python课程: http://code.google.com/edu/languages/google-python-class/
+
+然后做 http://www.pythonchallenge.com/ 这个网站上面的题目练练手. 如果卡在某一关太久, 可以看答案(google python challenge answer), 做完后看看别人的编码方式和自己有什么区别.
 
 小项目
 ````````````````````````````
