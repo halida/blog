@@ -1,5 +1,6 @@
 .. image:: https://a248.e.akamai.net/assets.github.com/img/7744a8503993132e8a14c79be38e3724c6564fa2/687474703a2f2f696d672e736b697463682e636f6d2f32303130303131312d6b6d326635676d747062713233656e70756a6272756a366d676b2e706e67
    :align: center
+   :width: 600
 
 resque
 --------------------------------
