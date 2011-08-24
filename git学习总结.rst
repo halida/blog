@@ -22,6 +22,7 @@
 
 关于上面的流程管控, 有个神器可以使用: `git flow`_, 这里面的教程看一遍就能够体会到威力了.
 
+.. _`git官方教程`: http://git-scm.com/
 .. _`dropbox`: http://www.dropbox.com/
 .. _`其他人`: http://www.jeffkit.info/2010/12/885/
 .. _`gitworkflows`: http://www.kernel.org/pub/software/scm/git/docs/gitworkflows.html
