@@ -13,7 +13,7 @@ down:
 vps-publish: down build
 
 publish: up
-	ssh blog.linjunhalida.com "cd /data/workspace/blog-src/;hg pull;hg up; cd /home/halida/haliblog/;source ~/.bashrc;rake update"
+	ssh blog.linjunhalida.com "cd /data/workspace/blog-src/;hg pull;hg up; cd /home/halida/haliblog/;source /home/halida/.rvm/scripts/rvm;rake update"
 
 show: build
 	chromium-browser ../blog/index.html
