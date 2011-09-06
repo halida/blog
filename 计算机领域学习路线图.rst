@@ -5,9 +5,11 @@
 ------------------------
 帮助计算机领域的初学者, 从零开始, 一步步成为一个靠谱的计算机领域的专家. 这里面只包含偏软件的部分.
 
-* 了解计算机领域的基础知识
+我们需要达成以下目标:
+
+* 了解计算机领域的基础知识. 对背景的了解是基础.
 * 拥有计算机科学家的思维和解决问题的能力
-* 能编程!
+* 能编程! 编程是我们解决问题的主要方式.
 * 使用开源系统, 加入到开源社区中去
 
 计算机基础课程学习
@@ -16,16 +18,17 @@
 
 入门课程.
 
-* `6.087 <http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-087-practical-programming-in-c-january-iap-2010/>`_ C语言是必须要掌握的..
-* `6.189 <http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-189-a-gentle-introduction-to-programming-using-python-january-iap-2011/readings/>`_ python也是必须要掌握的.
 * `6.00 <http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008>`_ 入门课. 
 * `6.001 <http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-001-structure-and-interpretation-of-computer-programs-spring-2005>`_ 老牌入门课.
+* `6.087 <http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-087-practical-programming-in-c-january-iap-2010/>`_ C语言是必须要掌握的..
+* `6.189 <http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-189-a-gentle-introduction-to-programming-using-python-january-iap-2011/readings/>`_ python也是必须要掌握的.
 
 基础课程.
 
 * `6.042J <http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-spring-2010/>`_ 恩, 一些计算机领域必须的数学基础.
-* `6.002 <http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-004-computation-structures-spring-2009/>`_ 可以说是计算机组成原理. 
 * `6.046J <http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-046j-introduction-to-algorithms-sma-5503-fall-2005/>`_ 算法基础. 
+* `6.002 <http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-004-computation-structures-spring-2009/>`_ 计算机组成原理. 
+* `6.828 <http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-828-operating-system-engineering-fall-2006/>`_ 操作系统
 * `6.035 <http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-035-computer-language-engineering-sma-5502-fall-2005/>`_ 编译原理.
 
 网络部分.
