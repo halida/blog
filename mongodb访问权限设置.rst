@@ -11,6 +11,8 @@ iptable限制访问资源
 
 设置规则:
 
+.. code-block:: sh
+
     sudo iptables -I INPUT 1 -p tcp --dport 27017 -s 允许的外部IP -j ACCEPT
     iptables -A INPUT -p tcp --dport 27017 -j DROP
 
@@ -22,6 +24,8 @@ mongodb权限管理
 
 在服务器本地执行 mongo
 
+.. code-block:: sh
+
     use crawler_db
     db.addUser('admin','admin')
 
@@ -29,5 +33,7 @@ mongodb权限管理
 需要重启mongo
 
 连接上的时候, 需要db auth一下:
+
+.. code-block:: sh
 
     $db.authenticate('admin', 'admin')
