@@ -7,13 +7,12 @@
 
 兴趣点
 -------------------------
-* 经济学: 古典自由主义, 张五常, 铅笔经济学
 * 音乐: 旋律类的都可, 钢琴(正在练, 每天1小时, 持续..一辈子)
-* 科幻奇幻: 神秘博士, 卡拉迪加, 权力的游戏, 三体
+* 经济学fans
+* 科幻奇幻小说迷
 * 编程: c/c++/lisp/lua/delphi/python, Qt/PyQt4/pyside
 * 系统: linux, emacs
-* 游戏: roguelike, Cortex Command, minecraft
-* 网络小说: 兔子流, 流浪仙人, 泽天记, 暗影法师
+* 独立游戏: roguelike, Cortex Command, minecraft
 
 三观
 -------------------------
