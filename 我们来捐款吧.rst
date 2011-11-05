@@ -23,31 +23,31 @@
 ------------------------
 十分之一收入捐: 500人民币, 70美元
 
-2011/03 
+* 2011/03 
 
   * 50$ wikipedia
   * (时间到了没成, 已退款) 50$ mike的上海技术咖啡馆 http://gurudigger.com/idea/detail?iid=14417
   * ¥3,000(日元) 日本红十字 Japanese Red Cross Society
 
-2011/04
+* 2011/04
 
   * 700 mike的上海技术咖啡馆 http://gurudigger.com/idea/detail?iid=14417
 
-2011/05
+* 2011/05
 
   * 30$ http://www.thedanplan.com/donations.php
   * 40$ wikipedia
 
-2011/06
+* 2011/06
 
   * 30 翻墙用VPS
 
-2011/07
+* 2011/07
 
   * 30 翻墙用VPS
   * 100$ FSF
 
-2011/08
+* 2011/08
 
   * 20$ JADE http://www.adom.de
   * 10$ http://gurudigger.com/ideas/36317
@@ -56,6 +56,6 @@
   * 20$ http://gurudigger.com/ideas/36230
 
 
-2011/11
+* 2011/11
 
   * 155$ 成为艾未未债主
