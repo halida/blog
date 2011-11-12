@@ -8,7 +8,7 @@
 
 .. code-block:: bash
 
-    sudo apt-get install ruby git-core curl zlib1g-dev libssl-dev libsqlite3-dev
+    sudo apt-get install ruby git-core curl zlib1g-dev libssl-dev libsqlite3-dev libreadline-dev g++ libxml2-dev libxslt1-dev
 
 然后安装rvm (按照 https://rvm.beginrescueend.com/rvm/install/ ) 
 
