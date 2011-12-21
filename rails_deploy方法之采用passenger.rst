@@ -47,4 +47,6 @@ Passenger
 
 最好要看一下 passenger_spawn_method 和 Spawning methods explained 的部分, 了解一下工作原理. Analysis and system maintenance这部分也最好看看.
 
-不过听说passenger只是给初学者用的, 大家会用其他的可配置的工具. 比如unicorn等等.
+不过听说passenger只是给初学者用的, 大家会用其他的可配置的工具. 比如 `unicorn <http://unicorn.bogomips.org/>`_ 等等.
+
+这里再补充一下unicorn的使用方法, 基本上gem install unicorn, 然后执行unicorn_rails -p 8080就可以了. 在nginx上面设置一下端口转发80到8080就能用了. 这里有一个 `unicorn nginx的示例 <http://unicorn.bogomips.org/examples/nginx.conf>`_ 可以抄.
