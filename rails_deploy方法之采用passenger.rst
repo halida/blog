@@ -7,13 +7,19 @@ Passenger
 
 首先安装passenger:
 
+.. code-block:: sh
+
     gem install passenger
 
 然后安装nginx插件:
 
+.. code-block:: sh
+
     passenger-install-nginx-module
 
 然后设置nginx:
+
+.. code-block:: sh
 
     http {
         passenger_root /somewhere/passenger-x.x.x;
@@ -32,6 +38,8 @@ Passenger
     }
 
 重启服务的话只要:
+
+.. code-block:: sh
 
     touch /webapps/mycook/tmp/restart.txt
 
