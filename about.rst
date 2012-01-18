@@ -1,4 +1,4 @@
-.. image:: https://picasaweb.google.com/lh/photo/dkjKJLKfe62vUC3wKAAExtMTjNZETYmyPJy0liipFm0?feat=directlink
+.. image:: https://lh6.googleusercontent.com/-phObbT9xpTg/TxZ1j2F0EBI/AAAAAAAAEcc/emsStX8ShTI/s800/s.jpg
    :align: center
 
 我是一个程序员, 我希望能够持续提升自己的技能和智慧, 能够以我的方式改变这个世界.
