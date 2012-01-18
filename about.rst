@@ -1,48 +1,22 @@
-.. image:: http://lh4.ggpht.com/_os_zrveP8Ns/Rh4smGQxjwI/AAAAAAAAAo0/bNj3xtmIrWk/s400/101D0765.JPG
+.. image:: https://picasaweb.google.com/lh/photo/dkjKJLKfe62vUC3wKAAExtMTjNZETYmyPJy0liipFm0?feat=directlink
    :align: center
 
-我是一个程序员, 我希望能够持续提升自己的技能和智慧, 开发出伟大的系统. 但是路漫漫...
-
-以及: 現居上海, 求一位靠谱女生做女友, 对眼(清秀), 聊得来(兴趣有重合, 三观一致)即可. 欢迎推荐.
+我是一个程序员, 我希望能够持续提升自己的技能和智慧, 能够以我的方式改变这个世界.
 
 兴趣点
 -------------------------
 * 音乐: 旋律类的都可, 钢琴(正在练, 每天1小时, 持续..一辈子)
 * 经济学fans
 * 科幻奇幻小说迷
-* 编程: c/c++/lisp/lua/delphi/python, Qt/PyQt4/pyside
+* 编程: c/c++/lisp/lua/delphi/python/ruby/js/coffeescript
 * 系统: linux, emacs
 * 独立游戏: roguelike, Cortex Command, minecraft
 
-三观
--------------------------
-* 人生观
-
-  人生苦短, 想做什么就去做吧. 尝试更多的可能性, 体会更多的内容. 
-  但是方式上我还是很保守, 希望以后能够更开放些.
-  基本上我还是属于sensates.
-
-* 世界观
-
-  现在是创造和进步的时代, 无数新的成就和进步在我们的周围发生, 人们可以按照自己的愿望生活, 并实现自己的理想. 
-  
-* 价值观
-
-  来到这个世界上, 如果自己没有给这个世界带来点特殊的东西, 只是做点别人也能做的事情, 那怎么能够表示出自己的价值呢?
-
-性格
--------------------------
-特立独行, 喜欢尝试不一样的东西
-
 混迹于
 -------------------------
-* twitter: http://twitter.com/#!/linjunhalida
 * douban: http://www.douban.com/people/linjunhalida/
+* twitter: http://twitter.com/#!/linjunhalida
 * maillist: python-cn, shlug, toplanguage
-
-现在在玩的以及玩过的
--------------------------
-emacs, gmail, douban, twitter, chrome, skype, restructuredtext, sphinx, c, c++, python, ruby, lua, lisp, scheme, pyqt4, qwt, ubuntu10.10, eeepc, nginx, django, adom, elona, rails, javascript
 
 联系方式
 -------------------------
