@@ -63,3 +63,10 @@
 * 2011/12
 
   * 300 积木 http://jimudonation.com/project/1
+
+* 2012/1 和 2012/2
+
+  * 120$ FSF 
+
+  .. image:: http://static.fsf.org/nosvn/associate/fsf-10545.png
+     :target: http://www.fsf.org/register_form?referrer=10545
