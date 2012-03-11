@@ -16,6 +16,7 @@ guard可以和rails整合, `这里 <http://railscasts.com/episodes/264-guard?vie
 Guardfile :
 
 ::
+
     guard 'rake', :task => 'default' do
       watch(/(.*)/) 
     end
@@ -23,6 +24,7 @@ Guardfile :
 Rakefile:
 
 ::
+
     task :default do
       sh 'cpp xxx.c -o hello'
       sh './hello'
@@ -31,6 +33,7 @@ Rakefile:
 然后在这个文件夹里面执行:
 
 ::
+
     guard
 
 每次这个文件夹里面出现了文件变更, 就会重新执行一下default, 编译执行一下代码, 省去了每次自己点击的操作了.
