@@ -3,9 +3,9 @@
 
 介绍
 ------------------------
-`guard<https://github.com/guard/guard>`_ 是一个自动监控文件夹变更, 执行特定操作的工具. 如果你有这样的需求, 就可以用它.
+`guard <https://github.com/guard/guard>`_ 是一个自动监控文件夹变更, 执行特定操作的工具. 如果你有这样的需求, 就可以用它.
 
-guard可以和rails整合, `这里<http://railscasts.com/episodes/264-guard?view=asciicast>`_ 是介绍.a 
+guard可以和rails整合, `这里 <http://railscasts.com/episodes/264-guard?view=asciicast>`_ 是介绍.a 
 
 使用方法
 ------------------------
@@ -36,7 +36,7 @@ Rakefile ::
 --------------------------
 我们使用一个工具的时候一般来说最好还是需要知道一下这个工具的基本工作原理, 不然遇到问题的话也比较好解决.
 
-底层根据操作系统采用对应的文件系统监控API(Listener). 在linux下面是调用 `inotify<http://en.wikipedia.org/wiki/Inotify>`_.
+底层根据操作系统采用对应的文件系统监控API(Listener). 在linux下面是调用 `inotify <http://en.wikipedia.org/wiki/Inotify>`_.
 
 guard的插件, 需要继承Guard, 实现run_on_change/initialize/start/stop 这些API就可以了.
 
