@@ -5,7 +5,7 @@
 ------------------------
 `guard <https://github.com/guard/guard>`_ 是一个自动监控文件夹变更, 执行特定操作的工具. 如果你有这样的需求, 就可以用它.
 
-guard可以和rails整合, `这里 <http://railscasts.com/episodes/264-guard?view=asciicast>`_ 是介绍.a 
+guard可以和rails整合, `这里 <http://railscasts.com/episodes/264-guard?view=asciicast>`_ 是介绍.
 
 使用方法
 ------------------------
@@ -13,14 +13,16 @@ guard可以和rails整合, `这里 <http://railscasts.com/episodes/264-guard?vie
 我们先装好一个插件: guard-rake
 新建一个文件夹,里面2个文件:
 
-Guardfile ::
+Guardfile :
 
+::
     guard 'rake', :task => 'default' do
       watch(/(.*)/) 
     end
 
-Rakefile :: 
+Rakefile:
 
+::
     task :default do
       sh 'cpp xxx.c -o hello'
       sh './hello'
@@ -28,6 +30,7 @@ Rakefile ::
 
 然后在这个文件夹里面执行:
 
+::
     guard
 
 每次这个文件夹里面出现了文件变更, 就会重新执行一下default, 编译执行一下代码, 省去了每次自己点击的操作了.
