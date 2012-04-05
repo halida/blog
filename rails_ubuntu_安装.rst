@@ -8,13 +8,13 @@
 
 .. code-block:: bash
 
-    sudo apt-get install ruby git-core curl zlib1g-dev libssl-dev libsqlite3-dev libreadline-dev g++ libxml2-dev libxslt1-dev
+    sudo apt-get install ruby git-core curl zlib1g-dev libssl-dev libsqlite3-dev libreadline-dev g++ libxml2-dev libxslt1-dev libmysqlclient-dev autoconf
 
 然后安装rvm (按照 https://rvm.beginrescueend.com/rvm/install/ ) 
 
 .. code-block:: bash
 
-    bash < <(curl -s https://rvm.beginrescueend.com/install/rvm)
+    bash -s stable < <(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer)
 
 把环境加到shell path里面 
 
@@ -41,17 +41,17 @@
 
     type rvm | head -1
 
-安装ruby1.9.2 
+安装ruby1.9.3 
 
 .. code-block:: bash
 
-    rvm install 1.9.2
+    rvm install 1.9.3
 
 设置默认环境 
 
 .. code-block:: bash
 
-    rvm use 1.9.2 --default
+    rvm use 1.9.3 --default
 
 安装rails
 -------------------------
@@ -71,7 +71,7 @@ rails默认db是sqlite, 为了调试, 也可能整成mysql的, 这里也加上my
 
 .. code-block:: bash
 
-  sudo apt-get install mysql
+  sudo apt-get install mysql-server
 
 mysql默认编码是latin, 我们要改成utf8, 修改/etc/mysql/my.cnf, 
 
