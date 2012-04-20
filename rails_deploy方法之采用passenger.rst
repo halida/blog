@@ -11,13 +11,13 @@ Passenger
 
     gem install passenger
 
-然后安装nginx插件:
+然后安装nginx插件， 需要系统权限， 所以采用rvmsudo:
 
 .. code-block:: sh
 
-    passenger-install-nginx-module
+    rvmsudo passenger-install-nginx-module
 
-然后设置nginx:
+然后设置nginx: (sudo vi /opt/nginx/conf/nginx.conf)
 
 .. code-block:: sh
 
@@ -36,6 +36,12 @@ Passenger
             passenger_use_global_queue on;
         }
     }
+
+修改完设置之后重新启动nginx:
+
+.. code-block:: sh
+
+    sudo /opt/nginx/sbin/nginx -s reload
 
 重启服务的话只要:
 
