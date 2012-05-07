@@ -13,7 +13,7 @@ down:
 vps-publish: down build
 
 publish: up
-	ssh linjunhalida.com "cd blog; hg pull; hg up; cd ../haliblog-middleman/; source /home/halida/.bashrc; middleman build"
+	ssh linjunhalida.com "cd blog; git pull; cd ../haliblog-middleman/; ruby blog_update.rb; bundle exec middleman build; cp build/* /var/www/nginx-default -rf"
 
 show: build
 	chromium-browser ../blog/index.html
