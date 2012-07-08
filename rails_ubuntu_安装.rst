@@ -106,6 +106,27 @@ mysql默认编码是latin, 我们要改成utf8, 修改/etc/mysql/my.cnf,
     # 设置权限
     grant all privileges on test.* to tester;
 
+postgresql设置
+-------------------------
+我们也可以设置采用postgresql。
+
+安装postgresql
+
+.. code-block:: bash
+
+  sudo apt-get install postgresql postgresql-client
+
+
+进入命令行后, 我们需要加上用户和数据库：
+
+.. code-block:: bash
+
+    sudo -u postgres psql postgres << EOF
+    CREATE DATABASE test;                           
+    CREATE USER test WITH PASSWORD 'test';          
+    GRANT ALL PRIVILEGES ON DATABASE test to test;  
+    EOF
+
 好了, 现在东西都已经可以用了, 开始干活吧.
 
 

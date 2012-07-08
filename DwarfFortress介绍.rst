@@ -15,3 +15,13 @@ http://www.bay12games.com/dwarves/screens.html
 .. image:: http://i481.photobucket.com/albums/rr172/nil2008/screenshot1.jpg
 
 这个工具可以在linux下面用cmake编译,但是我没有编译成功, 摸索中.
+
+有一些其他的类似的游戏， 整理在这里：
+
+http://www.townsgame.com/
+
+http://www.goblincamp.com/
+
+http://www.paradoxplaza.com/games/a-game-of-dwarves
+
+http://gnomoria.com/?page_id=15
