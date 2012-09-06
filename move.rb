@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
-
 BLOG_DIR = "."
-TARGET_DIR = "/data/workspace/haliblog-octopress/source/_posts"
+TARGET_DIR = "/data/workspace/octopress/"
 
 FORMAT = """
 ---
@@ -48,14 +47,17 @@ def move
     cmd = %{cat "#{title}.rst"| pandoc  -f rst -t markdown}
     text = `#{cmd}`
     # code
-    text = text.strip.gsub(/~~~~/, "```").gsub(/~~~~ {.sourceCode .(\w+)}/, '```\1')
+    text = text.strip
+      .gsub(/~~~~ {\.sourceCode .([^\}]+)}/, '```\1')
+      .gsub(/~~~~/, "```")
+      .gsub("```lisp", "```")
     # first line image need a space
     text.sub!(/\n/, "\n\n") if text.start_with? "![image]"
 
     header = FORMAT % {title: title, created: created}
-    File.open("#{TARGET_DIR}/#{created.split[0]}-#{MAPED_TITLE[title]}.markdown", "w+").write("#{header}\n#{text}")
+    target = title.start_with?("_") ? "#{TARGET_DIR}/t" : "#{TARGET_DIR}/source/_posts"
+    File.open("#{target}/#{created.split[0]}-#{MAPED_TITLE[title]}.markdown", "w+").write("#{header}\n#{text}")
   end  
 end
 
 move()
-
