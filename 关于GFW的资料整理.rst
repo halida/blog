@@ -52,7 +52,7 @@ https://www.evernote.com/shard/s7/sh/1464eee6-78d0-44de-aa3d-45039228c1d1/cdf44a
 
 * 如果你想随便看看视频, 去 http://www.youtube.com, 里面有学习的好资料, 搜索: open courseware, TED.
 * 如果你想看看全世界的微博, 你可以去 http://www.twitter.com , 关注我吧, 搜索: linjunhalida
-* 如果你想看看百科全书以及40年前中国到底发生了什么, 你可以去cn.wikipedia.org, 搜索对应的年份和事件.
+* 如果你想看看百科全书以及40年前中国到底发生了什么, 你可以去zh.wikipedia.org, 搜索对应的年份和事件.
 * 如果你只是想看妹子, 去 http://boards.4chan.org/s/
 * 如果你想看美剧而你的英语又比较好的话, 上 http://www.hulu.com 
 
